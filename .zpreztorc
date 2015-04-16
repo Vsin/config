@@ -42,8 +42,8 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'emacs'
-
+zstyle ':prezto:module:editor' key-bindings 'vi'
+bindkey '^r' history-incremental-search-backward
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
 
@@ -112,7 +112,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
 
 #
 # Syntax Highlighting
@@ -123,8 +123,8 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 zstyle ':prezto:module:syntax-highlighting' highlighters \
    'main' \
    'brackets' \
+   'cursor'
 #   'pattern' \
-#   'cursor'
 #   'root'
 #
 # Set syntax highlighting styles.
@@ -157,4 +157,4 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
- zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
