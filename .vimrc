@@ -46,7 +46,9 @@ map <C-H> :prev <CR>
 map <F10> <Esc>setlocal spell spelllang=en_us<CR>
 map <F11> <Esc>setlocal nospell<CR>
 
-set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+set guifont=Source\ Code\ Pro\ 12
 
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
+execute pathogen#infect()
